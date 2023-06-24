@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8D86A"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/ImgBrazos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/imgMimir"
+        app:layout_constraintEnd_toStartOf="@+id/imgMuleta"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741"
+        app:srcCompat="@drawable/baseline_accessibility_new_24" />
+
+    <ImageButton
+        android:id="@+id/imgMuleta"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_assist_walker_24" />
+
+    <ImageButton
+        android:id="@+id/imgMimir"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="280dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_airline_seat_individual_suite_24" />
+
+    <ImageButton
+        android:id="@+id/imgBluthu"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/imgMimir"
+        app:layout_constraintTop_toBottomOf="@+id/imgMuleta"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/baseline_bluetooth_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
