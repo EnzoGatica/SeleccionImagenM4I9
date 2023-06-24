@@ -10,10 +10,10 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int imgBrazos = R.drawable.baseline_accessibility_new_24;
-    int imgMuleta = R.drawable.baseline_assist_walker_24;
-    int imgMimir = R.drawable.baseline_airline_seat_individual_suite_24;
-    int imgBluthu = R.drawable.baseline_bluetooth_24;
+    int img1 = R.drawable.baseline_accessibility_new_24;
+    int img2 = R.drawable.baseline_assist_walker_24;
+    int img3 = R.drawable.baseline_airline_seat_individual_suite_24;
+    int img4 = R.drawable.baseline_bluetooth_24;
 
 
     @Override
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         imgBrazos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveToSecondActivity();
+                moveToSecondActivity(img1);
 
             }
         });
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         imgMuleta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveToSecondActivity();
+                moveToSecondActivity(img2);
 
             }
         });
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         imgMimir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveToSecondActivity();
+                moveToSecondActivity(img3);
 
             }
         });
@@ -58,15 +58,16 @@ public class MainActivity extends AppCompatActivity {
         imgBluthu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveToSecondActivity();
+                moveToSecondActivity(img4);
 
             }
         });
 
     }
 
-    public void  moveToSecondActivity(){
+    public void  moveToSecondActivity(int img){
         Intent move = new Intent(MainActivity.this, SecondActivity.class);
+        move.putExtra("clave",img);
         startActivity(move);
     }
 }
